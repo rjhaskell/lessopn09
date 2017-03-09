@@ -11,7 +11,8 @@
   "scripts": {
     "lite": "lite-server",
     "tsc:w": "tsc -w",
-    "start": "concurrently \"npm run lite\" \"npm run tsc:w\" "
+    "sass:w":"node-sass -w -r css/ -o css/",
+    "start": "concurrently \"npm run lite\" \"npm run tsc:w\" \"npm run sass:w\" "
   },
   "keywords": [],
   "author": "",
